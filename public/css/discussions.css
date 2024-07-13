@@ -1,0 +1,326 @@
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    background-color: #05378b;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+
+/*
+---------------
+---  HEADER ---
+---------------
+*/
+
+.header {
+    height: 70px;
+    width: 100vw;
+    background: #05378B;
+    box-shadow: 1px 1px lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+}
+
+.header h1 {
+    margin-left: 10px;
+    color: whitesmoke;
+}
+
+
+/*
+---------------
+-- CONTAINER --
+---------------
+*/
+
+.container {
+    display: flex;
+    padding: 20px;
+    margin: 1px;
+    background-color: whitesmoke;
+    height: calc(100vh - 110px);
+}
+
+.container .discussions-container {
+    width: 20%;
+    box-shadow: 1px 1px lightgray, -1px 0 4px lightgray;
+    background-color: white;
+    overflow-y: scroll;
+}
+
+.container .messages {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 10000;
+    box-shadow: 1px 1px lightgray, -1px 0 4px lightgray;
+    background-color: white;
+}
+
+.container .messages .messages-discussion-name {
+    background: rgb(2, 2, 2, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+}
+
+.container .messages .chat-messages {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+/*
+---------------
+-- CONTAINER --
+----- discussion
+---------------
+*/
+
+.container .discussions .discussion {
+    padding: 10px;
+    display: flex;
+    border-bottom: solid 1px rgb(236, 236, 236);
+}
+
+.container .discussions .discussion:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.container .discussions .discussion .discussion-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 10000;
+}
+
+.container .discussions .new-message {
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 10px;
+    position: relative;
+    top: -2px;
+    right: -2px;
+}
+
+.container .discussions .discussion .discussion-initial {
+    height: 45px;
+    width: 45px;
+    border-radius: 45px;
+    background-color: #05378B;
+    color: white;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    font-weight: 700;
+}
+
+.container .discussions .discussion .discussion-content p {
+    margin: 0;
+}
+
+.container .discussions .discussion .discussion-content p:first-child {
+    font-weight: 700;
+}
+
+.container .discussions .discussion .discussion-content p:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: gray;
+}
+
+
+/*
+---------------
+-- CONTAINER --
+----- message
+---------------
+*/
+
+.container .messages .chat-messages .message {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: fit-content;
+    max-width: 80%;
+    position: relative;
+    z-index: 1;
+}
+
+.container .messages .chat-messages .message:before,
+.container .messages .chat-messages .message:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 25px;
+    z-index: 0;
+}
+
+.container .messages .chat-messages .message p {
+    margin: 0;
+    word-wrap: break-word;
+    z-index: 1;
+}
+
+.container .messages .chat-messages .message p:first-child {
+    font-weight: 700;
+}
+
+.container .messages .chat-messages .message p.date {
+    align-self: flex-end;
+    font-size: 12px;
+}
+
+.container .messages .chat-messages .message.yours {
+    background-color: #eee;
+    align-self: flex-start;
+}
+
+.container .messages .chat-messages .message.yours:before {
+    left: -7px;
+    width: 20px;
+    background-color: #eee;
+    border-bottom-right-radius: 16px 14px;
+}
+
+.container .messages .chat-messages .message.yours:after {
+    left: -26px;
+    width: 26px;
+    background-color: white;
+    border-bottom-right-radius: 10px;
+}
+
+.container .messages .chat-messages .message.mine {
+    color: white;
+    background: #0085D1;
+    align-self: flex-end;
+}
+
+.container .messages .chat-messages .message.mine:before {
+    right: -7px;
+    width: 20px;
+    background-color: #0085D1;
+    border-bottom-left-radius: 16px 14px;
+}
+
+.container .messages .chat-messages .message.mine:after {
+    right: -26px;
+    width: 26px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+}
+
+
+/*
+---------------
+-- CONTAINER --
+----- INPUT
+---------------
+*/
+
+.container .messages .container-input {
+    padding: 15px;
+    display: none;
+    border-top: solid 1px rgb(236, 236, 236);
+}
+
+.container .messages .container-input .control {
+    display: flex;
+}
+
+.container .messages .container-input .control input {
+    padding: 10px;
+    border: 1px solid transparent;
+    flex-grow: 1;
+    outline: none;
+    background-color: whitesmoke;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.container .messages .container-input .is-expanded {
+    flex-grow: 1;
+}
+
+.container .messages .container-input .is-expanded input {
+    border: 0;
+    font-size: 16px;
+}
+
+.container .messages .container-input .control button:active,
+.container .messages .container-input .control button:focus,
+.container .messages .container-input .control button:disabled,
+.container .messages .container-input .control button:hover,
+.container .messages .container-input .control button {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: #05378B;
+    color: white;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+.container .messages .container-input .control button> :first-child {
+    font-size: 16px;
+}
+
+.oneline {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+    .container .discussions-container {
+        width: 100%;
+        max-height: 50%;
+    }
+    .container .messages {
+        margin-left: 0px;
+        margin-top: 20px;
+        height: 50%;
+    }
+}

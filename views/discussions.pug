@@ -1,0 +1,106 @@
+doctype html
+html
+    head
+        title SpeakApp
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js')
+        script(src="/socket.io/socket.io.js" )
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+        link(rel='stylesheet', href='public/css/discussions.css')
+
+        link(rel='apple-touch-icon', sizes="180x180", href='public/images/discussions/favicon/apple-touch-icon.png')
+        link(rel='icon', type="image/png", sizes="32x32", href='public/images/discussions/favicon/favicon-32x32.png')
+        link(rel='icon', type="image/png", sizes="16x16", href='public/images/discussions/favicon/favicon-16x16.png')
+        link(rel="manifest", href='public/images/discussions/favicon/site.webmanifest')
+        link(rel='apple-touch-icon', sizes="180x180", href='public/images/discussions/favicon/apple-touch-icon.png')
+
+        meta(name='theme-color', content='#05378b')
+        meta(name='msapplication-TileColor', content='#05378b')
+        meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+
+    body
+        div.header
+            <img src="public/images/discussions/telephone.png">
+            h1 SpeakApp
+        div.container
+            div.discussions-container
+                div.discussions#chat-discussions
+            div.messages
+                .messages-discussion-name#messages-discussion-name
+                    <p>Aucune discussion séléctionée</p>
+                .chat-messages#chat-messages
+                .div.container-input#chat-input
+                    .control.is-expanded
+                        input(type='text', class='input', placeholder='Message...', id='message')
+                    .control
+                        button(type='button' class=`button is-blue` onclick='sendMessage()') <i class="fas fa-paper-plane"></i>
+
+        script.
+                const socketUrl = "#{url}".concat("/discussions");
+                const socket = io(socketUrl);
+                var selectedDiscussionId = undefined;
+            
+                function sendMessage() {
+                   const name = "#{name}";
+                   const message = $('#message').val();
+                   if(message.length == 0 || name.length == 0) return;
+            
+                   const dataObject = {discussionId : selectedDiscussionId, author : name, message: message};
+                   socket.emit('message', JSON.stringify(dataObject));
+            
+                   $('#message').val('');
+                   return false;
+                };
+            
+               function connectToDiscussion(id, name) {
+                   selectedDiscussionId = id;
+                   const dataObject = {discussionId : id};
+                   $('#discussion-' + id + ' .new-message').remove();
+                   $('#messages-discussion-name').html("<p>"+ name + "</p>");
+                   socket.emit('history-discussion', JSON.stringify(dataObject));
+               }
+            
+                socket.on('connect', function(data) {
+                   socket.emit('history-discussions', "");
+                });
+            
+                socket.addEventListener('discussions', function(data) {
+                   const dataObject = JSON.parse(data);
+                   $('#chat-discussions').html("");
+                   for (const discussion of dataObject) {
+                       addingDiscussion(discussion);
+                   }
+                });
+            
+               function addingDiscussion(discussion) {
+                   $('#chat-discussions').append($("<div class='discussion' onclick='connectToDiscussion("+ discussion.discussionId + ", `"+ discussion.name + "`)' id='discussion-" + discussion.discussionId + "'><div class='discussion-initial'><p>" + discussion.name.split(' ').map(function(item){return item[0]}).join('') + "</p> </div> <div class='discussion-content'> <p class='oneline'>" + discussion.name + "</p> <p class='oneline' id='discussion-" + discussion.discussionId + "-last-message'>" + discussion.message + "</p> </div> </div>"));
+               }
+            
+                socket.addEventListener('messages', function(data) {
+                   const dataObject = JSON.parse(data);
+                   $('#chat-messages').html("");
+                   $('#chat-input').css("display", "flex");
+                   for (const message of dataObject) {
+                       addingMessageInChatMessage(message);
+                   }
+                });
+            
+                socket.addEventListener('message', function(data) {
+                   const dataObject = JSON.parse(data);
+                   $('#discussion-' + dataObject.discussionId + '-last-message').html(dataObject.message);
+                   if (dataObject.discussionId != selectedDiscussionId) { 
+                       $('#discussion-' + dataObject.discussionId + ' .new-message').remove();
+                       $('#discussion-' + dataObject.discussionId).append('<div class="new-message"></div>');
+                       return;
+                    }
+                   addingMessageInChatMessage(dataObject);
+                });
+            
+               function addingMessageInChatMessage(message) {
+                   const name = "#{name}";
+                   const locale = window.navigator.language;
+                   const formattedDate = moment(message.date).locale(locale).format('LLLL');
+                   const messageClass = message.author == name ? "mine" : "yours";
+                   $('#chat-messages').append($("<div class='message " + messageClass + "'><p>" + message.author + "</p><p>" + message.message + "</p> <p class='date'>" + formattedDate + "</p> </div>"));
+               }

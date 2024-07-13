@@ -1,0 +1,81 @@
+[{
+        "id": 1,
+        "title": "Final Space",
+        "creationDate": 2018,
+        "description": "Après avoir rencontré un alien adorable capable de détruire les planètes, un prisonnier humain se lance dans une aventure interstellaire pour sauver l'univers.",
+        "type": "Humour décalé, Palpitant",
+        "thumbnailUrl": "https://occ-0-56-55.1.nflxso.net/dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABcPmcr0dxpLvUJ9vj6BK3uM5dKa9q5p92VKIfjMElMnePUxcJ4FHNu3rINUCha8tuqqn7VADHT-NrqgB4M6LKgSJFUUtrIR-.jpg?r=e55"
+    },
+    {
+        "id": 2,
+        "title": "Umbrella Academy",
+        "creationDate": 2019,
+        "description": "Des années après avoir connu la gloire en tant que jeunes super-héros combattant le crime, les frères et soeurs Hargreeves, en froid, se retrouvent à la mort de leur père.",
+        "type": "Hallucinant, Insolite",
+        "thumbnailUrl": "https://occ-0-56-55.1.nflxso.net/dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABeiADTVJAZD49BNn4JFVOv5Y_S3FDmAh7345fGuDybZe8ka-_kzX_KiFDc2fwnyqUZj6_WxWPT8E3BB2aQBwy_X2jAEwZ0w4.jpg?r=f13"
+    },
+    {
+        "id": 3,
+        "title": "Les Nouvelles Aventures de Sabrina",
+        "creationDate": 2018,
+        "description": "La magie se mêle au trouble alors que Sabrina, demi-humaine demi-sorcière, navigue entre deux mondes, sa vie d'ado mortelle et son héritage familial, l'Église de la Nuit.",
+        "type": "Effrayant, Violent",
+        "thumbnailUrl": "https://occ-0-56-55.1.nflxso.net/dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABSIFknaUIwCnPK04JDgUYlCr_TeOKNYeTNJP8B6_9OnMmPQ44v_dC5q4PxcVS9csf-uIk1ZFCDCEPxpVEwONaMZBUMj8MUA7.jpg?r=7d2"
+    },
+    {
+        "id": 4,
+        "title": "Ash vs Evil Dead",
+        "creationDate": 2015,
+        "description": "Trente ans plus tard, le chasseur de démons Ash Williams est de retour pour combattre de nouveaux cadavéreux. Reste à voir s'il a vraiment perdu la main.",
+        "type": "Déjanté, Hallucinant",
+        "thumbnailUrl": "https://occ-0-56-55.1.nflxso.net/dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABY7lmSmw-dyCa3gKOeYM1sxBxuLr_X-AV8Os5AK3XLFbmyL_j8SfSscTkI9GykPWZL3O5LxigSl9qy_UKKoHchjuX5ESPlAr.jpg?r=c07"
+    },
+    {
+        "id": 5,
+        "title": "You",
+        "creationDate": 2018,
+        "description": "Obsédé par une étudiante rêvant de devenir auteur, un charmant libraire tente par tous les moyens de s'immiscer dans la vie de la jeune femme.",
+        "type": "Dramatique, Romantique",
+        "thumbnailUrl": "https://occ-0-56-55.1.nflxso.net/dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABdlw9Wqjy6x6Z5RXoNRn0Joj99mM4V5HTw9LqlQE7nm7vEwefl3JOG_tlCdd2WitiCi-MzltKpQW69x8Oy-Mzjp8sCvb2eV8.jpg?r=5c7"
+    },
+    {
+        "id": 6,
+        "title": "Rick et Morty",
+        "creationDate": 2013,
+        "description": "Rick, chercheur brillant, mais porté sur la bouteille, emmène son petit-fils timoré Morty dans d'autres mondes et dimensions où il lui fait vivre de folles escapades.",
+        "type": "Absurde, Excentrique",
+        "thumbnailUrl": "https://occ-0-56-55.1.nflxso.net/dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABehS0gRiwJSuNgrcijKlmQsWjoAG18aqrx2xMVZ1ZrP0WupJVRTL5WrFcN01rJdb94qVW-fiNv1nKmnpFcXFeNybBXgxYOvh.jpg?r=512"
+    },
+    {
+        "id": 7,
+        "title": "One-Punch Man",
+        "creationDate": 2015,
+        "description": "Le super-héros le plus puissant au monde est capable de tuer n'importe qui sans se fatiguer. Et c'est justement ça son problème : l'absence de défi et donc la morosité.",
+        "type": "Palpitant",
+        "thumbnailUrl": "https://occ-0-56-55.1.nflxso.net/dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABcKRh86FAV4o1N7jRrr9asvctd60SrNy-CBSPSw-w-sqQ5-JINJuClvXEMHjVwv_vso2cqfzN0qdoYKoYl83fFFEewrIaiw5.jpg?r=d7c"
+    },
+    {
+        "id": 8,
+        "title": "Stranger Things",
+        "creationDate": 2016,
+        "description": "Quand un jeune garçon disparaît, une petite ville découvre une affaire mystérieuse, des expériences secrètes, des forces surnaturelles terrifiantes... et une fillette.",
+        "type": "Effrayant",
+        "thumbnailUrl": "https://occ-0-56-55.1.nflxso.net/dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABderj7WxuEcibhFSaO-kPnFW3yRMuYqVubEHdldR3tTquZI8mj97NkvFh__q-Loihcx-af9jNwqys5d16mHjjmCgH7CiwJDS.jpg?r=239"
+    },
+    {
+        "id": 9,
+        "title": "Fullmetal Alchemist: Brotherhood",
+        "creationDate": 2009,
+        "description": "Dans le monde surnaturel de cet anime, les frères Edward et Alphonse combattent des forces malfaisantes pour récupérer leurs corps après avoir souffert dans leur chair.",
+        "type": "Palpitant",
+        "thumbnailUrl": "https://occ-0-56-55.1.nflxso.net/dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABa-kg6aQUjuTaDz9uuL5y91rJPXIgDRLwpDM7p_mAaWy30McQyR1a8AlgWRrVKbyjbgEjN4KOKgSn48x9iOci2Pggr54dvK1.jpg?r=615"
+    },
+    {
+        "id": 10,
+        "title": "Black Mirror",
+        "creationDate": 2011,
+        "description": "Cette anthologie de science-fiction explore un futur high-tech retors où se heurtent les plus belles innovations de l'humanité et ses plus bas instincts.",
+        "type": "Hallucinant, Dramatique",
+        "thumbnailUrl": "https://occ-0-56-55.1.nflxso.net/dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABTdZfrgPsInwnj0KKhSbZJpbDhUVZhIl3yitYtCpeus5yAr09tv1pwt5iBhJVc_dE0ZAezKHuQjHax2TS1V02TK399PIL0BN.jpg?r=62d"
+    }
+]

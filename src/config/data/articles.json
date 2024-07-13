@@ -1,0 +1,59 @@
+[{
+        "id": 1,
+        "name": "APPLE - MacBook Pro 15 Touch Bar - 512 Go",
+        "prix": 3357.36,
+        "marque": "APPLE",
+        "content": "Avec le MacBook Pro, l’ordinateur portable atteint des sommets inédits en matière de performances et de portabilité. Quelles que soient les contrées où vous mènera votre imagination, vous parviendrez plus vite que jamais à vos objectifs grâce, entre autres, à des processeurs et à une mémoire hautes performances, à des graphismes avancés et à un système de stockage d’une rapidité fulgurante."
+    },
+    {
+        "id": 2,
+        "name": "Huawei Mate 20 Pro",
+        "prix": 998.00,
+        "marque": "HUAWEI",
+        "content": "Triple Capteur photo conçu avec Leica de 40MP+20MP+8MP pour des photos parfaites même en basse lumière, Processeur doté d'intelligence artificielle, Processeur Kirin 970 octo-core pour un téléphone qui reste rapide, Zoom hybride x5, captez le moindre détail, même à distance, Ecran Huawei FullView FHD+ de 6, 1 pouces pour des couleurs vives et des contrastes élevés. Batterie de 4000mAh, une autonomie plus longue et une recharge plus rapide avec la technologie Huawei Charge rapide."
+    },
+    {
+        "id": 3,
+        "name": "Ecouteurs APPLE AIRPODS",
+        "prix": 179.00,
+        "marque": "APPLE",
+        "picture": "",
+        "content": "Les AirPods vont changer à jamais votre façon d’utiliser des écouteurs. Dès que vous les sortez de leur boîtier de charge, vos AirPods s’allument et se connectent à votre iPhone, Apple Watch, iPad ou Mac (1). Le son se déclenche automatiquement dès qu’on les place à l’oreille, et se met en veille dès qu’on les retire. Pour régler le volume, changer de morceau, passer un appel ou même obtenir un itinéraire, touchez deux fois l’écouteur afin d’activer Siri."
+    },
+    {
+        "id": 4,
+        "name": "Ecouteurs INTRA HUAWEI FREEBUDS NOIR",
+        "prix": 159.19,
+        "marque": "HUAWEI",
+        "content": "Les écouteurs true-wireless de Huawei sont une belle alternative au Apple Airpods pour écouter sa musique sur son smartphone ou sa tablette. L’étui fourni permet de ranger et de recharger les écouteurs lorsqu’ils ne sont pas utilisés, il se recharge en USB C et permet d’obtenir jusqu’à 10 heures d’autonomie. Les Freebuds disposent également de 4 micros qui permettent de passer des appels et des actions sont réalisables en appuyant sur le dos des écouteurs (Lancer la musique, mettre en pause, répondre à un appel et activer l’assistant vocal)."
+    },
+    {
+        "id": 5,
+        "name": "Dell XPS 15-9570-3481",
+        "prix": 2299.95,
+        "marque": "DELL",
+        "content": "L’ordinateur portable 15,6 pouces performant le plus compact au monde, intégrant un superbe écran InfinityEdge. Désormais équipé de processeurs Intel® Core™ de 8e génération, avec jusqu’à 6 cœurs et 12 threads."
+    },
+    {
+        "id": 6,
+        "name": "Apple iPhone XS Max",
+        "prix": 1085.00,
+        "marque": "APPLE",
+        "content": "Phone Xs Max. Place au plus grand écran jamais vu sur iPhone Écran Super Retina 6,5 pouces. Face ID avancé. La plus puissante et la plus intelligente des puces de smartphone. Et un double appareil photo d’avant-garde. L’iPhone Xs Max, c’est tout ce que vous aimez dans l’iPhone. Et bien plus encore. "
+    },
+    {
+        "id": 7,
+        "name": "Montre connectée APPLE WATCH 44MM ALU GRIS / NOIR series 4",
+        "prix": 459.00,
+        "marque": "APPLE",
+        "content": "Découvrez la nouvelle Apple Watch Series 4, son design épuré, et le plus grand écran jamais conçu pour une Apple Watch.L'Apple Watch series 4 ouvre de nouveaux horizons sur l'activité physique en intégrant un électrocardiogramme et un système d'appel SOS anti -chutes.Donnez le meilleur grâce aux nouvelles performance jamais atteintes de l'Apple Watch."
+    },
+    {
+        "id": 8,
+        "name": "Samsung Watch - Samsung Galaxy Watch ",
+        "prix": 254.99,
+        "marque": "Samsung",
+        "picture": "https://bit.ly/2rS64PD",
+        "content": "La Galaxy Watch vous propose, avec sa forme arrondie et le bruit si particulier d'une trotteuse de profiter des codes d'une authentique montre.Unique en son genre, la Galaxy Watch sublimera votre élégance avec ses cadrans personnalisables. La Galaxy Watch est disponible en deux versions. Un modèle 42 mm (Noir Carbone ou Or Impérial) et un modèle 46 mm (Gris Acier).Personnalisez votre Galaxy Watch avec le bracelet de votre choix. Optez pour le bracelet en silicone, léger, souple, il est disponible dans une grande palette de couleurs. La Galaxy Watch est respectivement compatible avec les bracelets 20 mm pour le boitier 42 mm et 22 mm pour le boitier 46 mm."
+    }
+]

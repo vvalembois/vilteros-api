@@ -1,0 +1,97 @@
+[{
+        "id": 1,
+        "name": "Animal Crossing : New Horizons",
+        "note": 17,
+        "synopsis": "Animal Crossing : New Horizons vous emmène de nouveau dans le monde mignon d'Animal Crossing, sur Nintendo Switch. Cultivez votre potager, pêchez, et faites votre vie avec vos compagnons en temps réel grâce à l'horloge de la console."
+    },
+    {
+        "id": 2,
+        "name": "Final Fantasy VII Remake",
+        "note": 18,
+        "synopsis": "Final Fantasy VII Remake est le remake de Final Fantasy VII. Le joueur y incarne toujours Cloud, un ancien soldat ayant rejoint le groupe terroriste Avalanche. Ce dernier essaye de déjouer les plans de la Shinra et en vient à se battre avec Sephiroth."
+    },
+    {
+        "id": 3,
+        "name": "Call of Duty : Modern Warfare",
+        "note": 17,
+        "synopsis": "Call of Duty Modern Warfare est un jeu de tir à la première personne. Le joueur incarne tour à tour un soldat du SAS ou un combattant de la liberté d'un pays du Proche-Orient. Le jeu adopte un ton sombre et mature, pour plus de réalisme."
+    },
+    {
+        "id": 4,
+        "name": "Pokémon Épée / Bouclier",
+        "note": 16,
+        "synopsis": "Pokémon Épée / Bouclier est le nouvel épisode de la série Pokémon, exclusif à la console de salon de Nintendo. Le jeu prend place dans la nouvelle région de Galar et donne accès à trois nouveaux Pokémons de départ : Ouistempo (plante), Flambino (feu) et Larméléon (eau)."
+    },
+    {
+        "id": 5,
+        "name": "Resident Evil 3 (2020)",
+        "note": 15,
+        "synopsis": "Resident Evil 3 (2020) est un jeu développé et édité par Capcom. C'est une version remise au goût du jour de Resident Evil 3, sorti initialement sur Playstation en 1999. Le joueur incarne Jill, une femme devant quitter Racoon City et les infectés qui habitent la ville."
+    },
+    {
+        "id": 6,
+        "name": "Doom Eternal",
+        "note": 18,
+        "synopsis": "Doom Eternal est la suite du reboot de Doom sorti en 2016 et développé par id Software. Il nous emmène une nouvelle fois au cœur de l'enfer pour y affronter des armées de démons toujours plus énervés. La Terre est aussi une de nos destination de voyage infernale."
+    },
+    {
+        "id": 7,
+        "name": "Half-Life : Alyx",
+        "note": 18,
+        "synopsis": "Half-Life : Alyx vous propose de vivre les événements entre le premier et le second épisode en incarnant Alyx Vance, fille de Eli Vance. Le titre destiné aux casques de réalité virtuelle proposera à l'image des premiers opus de résoudre des énigmes, d'explorer des lieux enfouis et de combattre une mystérieuse race extraterrestre appelée The Combine."
+    },
+    {
+        "id": 8,
+        "name": "Dragon Ball Z Kakarot",
+        "note": 13,
+        "synopsis": "Dragon Ball Z Kakarot permet de revivre l'histoire de Dragon Ball Z dans le peau de Kakarot / Goku. Développé par CyberConnect2, le jeu reproduit les moments emblématiques de l'oeuvre originale. Il est possible de voler dans un monde vaste que vous débloquerez en progressant dans l'aventure, de croiser des ennemis, d'accepter des quêtes, ou encore de pêcher."
+    },
+    {
+        "id": 9,
+        "name": "Pokémon Donjon Mystère : Équipe de Secours DX",
+        "note": 13,
+        "synopsis": "Pokémon Donjon Mystère : Équipe de Secours DX sur Nintendo Switch est une version bonifiée du jeu GBA paru en 2006. On y incarne un Pokémon, défini après un test de personnalité, dans un monde en proie à des catastrophes naturelles. L'objectif est de parcourir des donjons pour remporter des points de secourisme et atteindre le Grade Or, l'objectif ultime pour les équipes de secours."
+    },
+    {
+        "id": 10,
+        "name": "Dreams",
+        "note": 18,
+        "synopsis": "Dreams sur PS4 est un jeu de type sandbox dans lequel le joueur contrôle un \"imp\". Ce dernier permet d’interagir avec le monde alentour et créer de nouveaux objets et personnages. Vous pouvez aussi prendre possession des autres personnages pour les jouer."
+    },
+    {
+        "id": 11,
+        "name": "The Last of Us Part II",
+        "note": 18,
+        "synopsis": "Au centre de l'intrigue du premier volet, nous retrouvons à nouveau Joel et Ellie plus déterminée que jamais à éradiquer les infectés jusqu'au dernier. Se déroulant à nouveau dans un monde post apocalyptique, le duo toujours aussi soudé devra prendre les décisions qui s'imposent afin de survivre un seul jour de plus à cette pandémie."
+    },
+    {
+        "id": 12,
+        "name": "Borderlands 3",
+        "note": 16,
+        "synopsis": "Borderlands 3 est un RPG en vue FPS. Contrairement aux épisodes précédents, les joueurs vont pouvoir visiter Prométhée. Cette planète est la zone où Atlas a découvert la première Arche, une des éléments importants de la série."
+    },
+    {
+        "id": 13,
+        "name": "Nioh 2",
+        "note": 17,
+        "synopsis": "Nioh 2 est un action RPG développé par Koei Tecmo. L'aventure prend place durant la période Sengoku au Japon. Qu'ils soient des démons ou des humains, les obstacles se dressent au cours de l'aventure et il faudra user divers armes pour s'en défaire."
+    },
+    {
+        "id": 14,
+        "name": "Ori and the Will of the Wisps",
+        "note": 18,
+        "synopsis": "Ori and the Will of the Wisps est la suite du titre originel de Moon Studio : Ori and the Blind Forest. Le fameux personnage accompagné de ses précieux alliés repart à l'aventure pour de nouvelles heures d'émerveillement et de dangers."
+    },
+    {
+        "id": 15,
+        "name": "Death Stranding",
+        "note": 19,
+        "synopsis": "Death Stranding est un jeu d'action dans lequel la mort fait partie intégrante du gameplay. La mort est un des thèmes principaux, et les développeurs ont fait en sorte que les joueurs ne la voient pas comme une fin. L'histoire s'annonce sombre dans cet univers futuriste et fantastique."
+    },
+    {
+        "id": 16,
+        "name": "Call of Duty : Warzone",
+        "note": 17,
+        "synopsis": "Call of Duty : Warzone est un free-to-play disposant de deux modes de jeu : battle royale et pillage. Les parties réunissent 150 joueurs sur une immense carte, avec la présence de véhicules, des séries d'éliminations ou encore de contrats pour récupérer des récompenses en cours de partie."
+    }
+]

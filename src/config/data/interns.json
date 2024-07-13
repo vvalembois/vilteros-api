@@ -1,0 +1,91 @@
+[{
+        "id": 1,
+        "firstname": "Vincent",
+        "lastname": "Valembois",
+        "school": "Université de Lens",
+        "latitude": 50.433,
+        "longitude": 2.8279,
+        "phone": "+330609101112",
+        "mail": "vvalembois@yopmail.com"
+    },
+    {
+        "id": 2,
+        "firstname": "Hélène",
+        "lastname": "Filos",
+        "school": "Université de Valenciennes",
+        "latitude": 50.35,
+        "longitude": 3.5333,
+        "phone": "+330609101112",
+        "mail": "hfilos@yopmail.com"
+    },
+    {
+        "id": 3,
+        "firstname": "Bertrand",
+        "lastname": "Duplot",
+        "school": "Université de Lens",
+        "latitude": 50.433,
+        "longitude": 2.8279,
+        "phone": "+330609101112",
+        "mail": "bduplot@yopmail.com"
+    },
+    {
+        "id": 4,
+        "firstname": "Paul",
+        "lastname": "Armet",
+        "school": "Université Lille 3",
+        "latitude": 50.6333,
+        "longitude": 3.0667,
+        "phone": "+330609101112",
+        "mail": "parmet@yopmail.com"
+    },
+    {
+        "id": 5,
+        "firstname": "Antoine",
+        "lastname": "Mouplin",
+        "school": "Université de Valenciennes",
+        "latitude": 50.35,
+        "longitude": 3.5333,
+        "phone": "+330609101112",
+        "mail": "amouplin@yopmail.com"
+    },
+    {
+        "id": 6,
+        "firstname": "Matthieu",
+        "lastname": "Dupont",
+        "school": "Université de Lens",
+        "latitude": 50.433,
+        "longitude": 2.8279,
+        "phone": "+330609101112",
+        "mail": "mdupont@yopmail.com"
+    },
+    {
+        "id": 7,
+        "firstname": "Anaëlle",
+        "lastname": "Lacat",
+        "school": "IUT Lille",
+        "latitude": 50.6333,
+        "longitude": 3.0667,
+        "phone": "+330609101112",
+        "mail": "alacat@yopmail.com"
+    },
+    {
+        "id": 8,
+        "firstname": "Julie",
+        "lastname": "Hubon",
+        "school": "Université de Valenciennes",
+        "latitude": 50.35,
+        "longitude": 3.5333,
+        "phone": "+330609101112",
+        "mail": "jhubon@yopmail.com"
+    },
+    {
+        "id": 9,
+        "firstname": "Tony",
+        "lastname": "Blautin",
+        "school": "Université Lille 3",
+        "latitude": 50.6333,
+        "longitude": 3.0667,
+        "phone": "+330609101112",
+        "mail": "tblautin@yopmail.com"
+    }
+]

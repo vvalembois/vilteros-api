@@ -1,0 +1,45 @@
+[{
+        "id": 1,
+        "name": "Formation Android et iOS",
+        "confidential": false,
+        "messages": [{
+            "discussionId": 1,
+            "author": "Vincent",
+            "message": "Hello c'est super ici",
+            "date": "1519211809934"
+        }]
+    },
+    {
+        "id": 2,
+        "name": "Chemin de terre",
+        "confidential": false,
+        "messages": [{
+            "discussionId": 2,
+            "author": "Vincent",
+            "message": "On va au restaurant ?",
+            "date": "1519211809934"
+        }]
+    },
+    {
+        "id": 3,
+        "name": "Groupe de norsys",
+        "confidential": false,
+        "messages": [{
+            "discussionId": 3,
+            "author": "Vincent",
+            "message": "C'est quand le Campus ?",
+            "date": "1519211809934"
+        }]
+    },
+    {
+        "id": 4,
+        "name": "Groupe de vincent",
+        "confidential": true,
+        "messages": [{
+            "discussionId": 4,
+            "author": "Vincent",
+            "message": "Vous avez vu lu le livre sur la philosophie a partir des films du XXI é siécle ?",
+            "date": "1519211809934"
+        }]
+    }
+]
