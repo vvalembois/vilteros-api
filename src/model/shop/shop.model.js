@@ -1,7 +1,11 @@
 export class Shop {
-	constructor(first_article, second_artcile, articles) {
-		this.first_article = first_article;
-		this.second_artcile = second_artcile;
-		this.articles = articles;
-	}
+  constructor(firstArticle, secondArticle, articles) {
+    this.firstArticle = firstArticle;
+    this.secondArticle = secondArticle;
+    this.articles = articles;
+  }
+
+  listArticles() {
+    return this.articles;
+  }
 }

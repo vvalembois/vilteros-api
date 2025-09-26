@@ -1,35 +1,43 @@
 import { getDiscussionsWithAllInformations, getMessagesForDiscussionWithId, saveMessageInBDD } from '../service/discussion.service';
-
 import _ from 'lodash';
 import logger from '../logger';
+import { log } from 'winston';
 
 export default function(socket) {
+	// Handle new message
 	socket.on('message', async function(data) {
 		try {
 			const dataObject = JSON.parse(data);
 			const message = await saveMessageInBDD(dataObject);
-			const messageJson = JSON.stringify(_.reverse(message));
-			socket.broadcast.emit('message', messageJson);
-			socket.emit('message', messageJson);
+
+			// If message is an array, reverse it, otherwise wrap in array
+			const messageArray = Array.isArray(message) ? message.slice().reverse() : [message];
+
+			socket.broadcast.emit('message', messageArray);
+			socket.emit('message', messageArray);
 		} catch (error) {
-			logger.error('Socket Message error' + error);
+			logger.error('Socket Message error: ' + error);
 		}
 	});
 
+	// Fetch history of a single discussion
 	socket.on('history-discussion', async function(data) {
 		try {
 			const dataObject = JSON.parse(data);
 			const messages = await getMessagesForDiscussionWithId(dataObject.discussionId);
-			const result = JSON.stringify(_.reverse(messages));
-			socket.emit('messages', result);
+
+			const reversedMessages = Array.isArray(messages) ? messages.slice().reverse() : [];
+			socket.emit('messages', reversedMessages);
 		} catch (error) {
-			logger.error('Socket History Discussion error' + error);
+			logger.error('Socket History Discussion error: ' + error);
 		}
 	});
 
-	socket.on('history-discussions', async function(_) {
+	// Fetch all discussions
+	socket.on('history-discussions', async function(data) {
 		try {
 			const fetchedDiscussions = await getDiscussionsWithAllInformations();
+
 			const discussions = _.map(fetchedDiscussions, function(discussion) {
 				return {
 					discussionId: discussion.id,
@@ -38,10 +46,10 @@ export default function(socket) {
 					confidential: discussion.confidential
 				};
 			});
-			const result = JSON.stringify(discussions);
-			socket.emit('discussions', result);
+
+			socket.emit('discussions', discussions);
 		} catch (error) {
-			logger.error('Socket History Discussion error' + error);
+			logger.error('Socket History Discussions error: ' + error);
 		}
 	});
 }
