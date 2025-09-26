@@ -19,7 +19,12 @@ export async function getInterns() {
 
 export async function getInternById(internId) {
 	try {
-		const fetchedUser = await Contact.findOne({ id: internId });
+		const numericId = Number(internId);
+		if (Number.isNaN(numericId)) {
+			return Promise.reject(new Exception(400, 'Invalid intern ID'));
+		}
+
+		const fetchedUser = await Contact.findOne({ id: numericId });
 		if (!_.isNil(fetchedUser)) {
 			return fetchedUser;
 		} else {

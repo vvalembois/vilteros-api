@@ -7,10 +7,11 @@ on:
   pull_request:
     branches:
       - '**'
-
 jobs:
   eslint:
     runs-on: ubuntu-latest
+    outputs:
+      cache-key: ${{ steps.cache-npm.outputs.cache-hit }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -19,6 +20,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+
+      - name: Cache npm dependencies
+        id: cache-npm
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
 
       - name: Install dependencies
         run: npm install
@@ -38,15 +46,22 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies
-        run: npm install
+      - name: Restore npm cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+
+      - name: Install dependencies (if needed)
+        run: npm ci
 
       - name: SonarCloud Scan
         uses: sonarsource/sonarqube-scan-action@v6
         with:
           projectBaseDir: .
-          extraArgs: >
+          args: >
             -Dsonar.projectKey=vilteros-api
             -Dsonar.organization=vvalembois
+            -Dsonar.coverage.exclusions=**/*
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
