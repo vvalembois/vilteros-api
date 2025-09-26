@@ -19,7 +19,12 @@ export async function getAlbums() {
 
 export async function getAlbumById(albumId) {
 	try {
-		const fetchedAlbum = await Album.findOne({ id: albumId });
+		const numericId = Number(albumId);
+		if (Number.isNaN(numericId)) {
+			return Promise.reject(new Exception(400, 'Invalid album ID'));
+		}
+
+		const fetchedAlbum = await Album.findOne({ id: numericId });
 		if (!_.isNil(fetchedAlbum)) {
 			return fetchedAlbum;
 		} else {

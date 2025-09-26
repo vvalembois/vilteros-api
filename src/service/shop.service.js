@@ -1,6 +1,5 @@
 import { Article } from '../model/shop/article.model';
 import Exception from '../exception/exception';
-import { Game } from '../model/game.model';
 import { Shop } from '../model/shop/shop.model';
 import _ from 'lodash';
 import logger from '../logger';
@@ -35,7 +34,12 @@ export async function getArticles() {
 
 export async function getArticleById(articleId) {
 	try {
-		const fetchedArticle = await Game.findOne({ id: articleId });
+		const numericId = Number(articleId);
+		if (Number.isNaN(numericId)) {
+			return Promise.reject(new Exception(400, 'Invalid article ID'));
+		}
+
+		const fetchedArticle = await Article.findOne({ id: numericId });
 		if (!_.isNil(fetchedArticle)) {
 			return fetchedArticle;
 		} else {

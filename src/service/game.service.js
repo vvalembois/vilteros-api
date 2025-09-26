@@ -19,7 +19,11 @@ export async function getGames() {
 
 export async function getGameById(gameId) {
 	try {
-		const fetchedGame = await Game.findOne({ id: gameId });
+		const numericId = Number(gameId);
+		if (Number.isNaN(numericId)) {
+			return Promise.reject(new Exception(400, 'Invalid game ID'));
+		}
+		const fetchedGame = await Game.findOne({ id: numericId });
 		if (!_.isNil(fetchedGame)) {
 			return fetchedGame;
 		} else {

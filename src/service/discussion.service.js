@@ -50,7 +50,12 @@ export async function getDiscussionsWithAllInformations() {
 
 export async function getMessagesForDiscussionWithId(id) {
 	try {
-		const fetchedDiscussion = await Discussion.findOne({ id: id });
+		const numericId = Number(id);
+		if (Number.isNaN(numericId)) {
+			return Promise.reject(new Exception(400, 'Invalid discussion ID'));
+		}
+		
+		const fetchedDiscussion = await Discussion.findOne({ id: numericId });
 		if (!_.isNil(fetchedDiscussion)) {
 			return _.reverse(fetchedDiscussion.messages);
 		} else {

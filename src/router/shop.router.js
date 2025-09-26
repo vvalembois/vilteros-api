@@ -36,8 +36,8 @@ router.get('/articles', async (request, response) => {
 	}
 });
 
-router.get('/articles/:articlesId', async (request, response) => {
-	const articleId = request.params.pokemonId;
+router.get('/articles/:articleId', async (request, response) => {
+	const articleId = request.params.articleId;
 	if(_.isNil(articleId)) {
 		return routerExceptionHandlerBadRequest(response);
 	}

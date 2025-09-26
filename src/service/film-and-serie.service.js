@@ -19,7 +19,12 @@ export async function getSeriesAndFilms() {
 
 export async function getSerieAndFilmById(serieId) {
 	try {
-		const fetchedSerie = await FilmAndSerie.findOne({ id: serieId });
+		const numericId = Number(serieId);
+		if (Number.isNaN(numericId)) {
+			return Promise.reject(new Exception(400, 'Invalid serie ID'));
+		}
+		
+		const fetchedSerie = await FilmAndSerie.findOne({ id: numericId });
 		if (!_.isNil(fetchedSerie)) {
 			return fetchedSerie;
 		} else {

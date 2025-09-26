@@ -19,7 +19,12 @@ export async function getPokemons() {
 
 export async function getPokemonsById(pokemonId) {
 	try {
-		const fetchedPokemon = await Pokemon.findOne({ id: pokemonId });
+		const numericId = Number(pokemonId);
+		if (Number.isNaN(numericId)) {
+			return Promise.reject(new Exception(400, 'Invalid pokemon ID'));
+		}
+		
+		const fetchedPokemon = await Pokemon.findOne({ id: numericId });
 		if (!_.isNil(fetchedPokemon)) {
 			return fetchedPokemon;
 		} else {
