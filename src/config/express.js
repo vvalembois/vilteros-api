@@ -40,13 +40,13 @@ app.use('/public', express.static(_static_dirname + '/public'));
 export const server = http.createServer(app);
 
 const socketIo = io(server, {
-    cors: {
-        credentials: false
-    }
+	cors: {
+		credentials: false
+	}
 });
 
 socketIo
-    .of('discussions')
-    .on('connection', DISCUSSIONS_SOCKET);
+	.of('discussions')
+	.on('connection', DISCUSSIONS_SOCKET);
 
 export default server;

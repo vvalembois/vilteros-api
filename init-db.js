@@ -1,8 +1,9 @@
+/* eslint-disable no-undef */
 db.createUser({
-    user: "vilteros-api-user",
-    pwd: "vilteros-api-drowssap-1996",
-    role: [{
-        role: "readWrite",
-        db: 'vilteros-api'
-    }]
+	user: 'vilteros-api-user',
+	pwd: 'vilteros-api-drowssap-1996',
+	role: [{
+		role: 'readWrite',
+		db: 'vilteros-api'
+	}]
 });

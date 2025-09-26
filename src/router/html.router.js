@@ -8,15 +8,15 @@ const router = Router();
 const compileHomeFunction = pug.compileFile(getViewPath() + '/home.pug');
 
 router.get('/', async(request, response) => {
-    logger.debug('Get Root page');
+	logger.debug('Get Root page');
 
-    response.status(200).send(compileHomeFunction({
-        url: env.URL
-    }));
+	response.status(200).send(compileHomeFunction({
+		url: env.URL
+	}));
 });
 
 function getViewPath() {
-    return __dirname.replace('/src/router', '/views');
+	return __dirname.replace('/src/router', '/views');
 }
 
 export default router;
