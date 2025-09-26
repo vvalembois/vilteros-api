@@ -42,8 +42,11 @@ jobs:
         run: npm install
 
       - name: SonarCloud Scan
-        uses: SonarSource/sonarqube-scan-action@v5
+        uses: sonarsource/sonarqube-scan-action@v6
         with:
           projectBaseDir: .
+          extraArgs: >
+            -Dsonar.projectKey=vilteros-api
+            -Dsonar.organization=vvalembois
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

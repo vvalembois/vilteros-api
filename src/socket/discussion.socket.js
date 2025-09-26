@@ -1,7 +1,6 @@
 import { getDiscussionsWithAllInformations, getMessagesForDiscussionWithId, saveMessageInBDD } from '../service/discussion.service';
 import _ from 'lodash';
 import logger from '../logger';
-import { log } from 'winston';
 
 export default function(socket) {
 	// Handle new message
@@ -34,7 +33,7 @@ export default function(socket) {
 	});
 
 	// Fetch all discussions
-	socket.on('history-discussions', async function(data) {
+	socket.on('history-discussions', async function() {
 		try {
 			const fetchedDiscussions = await getDiscussionsWithAllInformations();
 
